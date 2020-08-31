@@ -30,8 +30,8 @@ public class SwaggerConfig {
 
     private ApiInfo metaInfo() {
         return new ApiInfoBuilder()
-                .title("Hello Swagger APIs")
-                .description("My APIs is listed here")
+                .title("SKELETON JAVA APIs")
+                .description("PoC with Zipkin")
                 .version("0.0.1-SNAPSHOT")
                 .build();
     }
