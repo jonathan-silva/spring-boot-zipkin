@@ -1,9 +1,12 @@
 package org.github.jonathan.skeleton.rest.product;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 import org.github.jonathan.skeleton.generic.ResourceGeneric;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -18,4 +21,9 @@ public class ProductResource extends ResourceGeneric<Product> {
     @Autowired
     ProductRepository productRepository;
 
+    @ApiOperation(value= ProductConstant.GET_ALL_LIST_ORDER_BY_ID)
+    @GetMapping("/order-id")
+    public List<Product> getAllByOrderById() {
+        return productRepository.findAllByOrderByIdAsc();
+    }
 }
