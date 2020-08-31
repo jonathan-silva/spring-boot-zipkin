@@ -14,16 +14,16 @@ import java.util.List;
 @Api(value=ProductConstant.DETAIL_PRODUCT_RESOURCE)
 public class ProductResource extends ResourceGeneric<Product> {
 
+    private final ProductRepository productRepository;
+
     public ProductResource(ProductRepository repo) {
         super(repo);
+        this.productRepository = repo;
     }
-
-    @Autowired
-    ProductRepository productRepository;
 
     @ApiOperation(value= ProductConstant.GET_ALL_LIST_ORDER_BY_ID)
     @GetMapping("/order-id")
     public List<Product> getAllByOrderById() {
-        return productRepository.findAllByOrderByIdAsc();
+        return this.productRepository.findAllByOrderByIdAsc();
     }
 }
