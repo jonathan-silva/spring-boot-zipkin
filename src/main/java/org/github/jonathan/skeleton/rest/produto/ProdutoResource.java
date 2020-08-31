@@ -1,15 +1,15 @@
-package org.github.jonathan.skeleton.produto;
+package org.github.jonathan.skeleton.rest.produto;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/produto")
 @CrossOrigin(origins = "*")
+@RequestMapping(value = "/produto")
 @Api(value="API REST Produtos")
 public class ProdutoResource {
 

@@ -1,4 +1,4 @@
-package org.github.jonathan.skeleton.produto;
+package org.github.jonathan.skeleton.rest.produto;
 
 import javax.persistence.*;
 import java.io.Serializable;

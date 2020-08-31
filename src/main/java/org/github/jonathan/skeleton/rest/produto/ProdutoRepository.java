@@ -1,4 +1,4 @@
-package org.github.jonathan.skeleton.produto;
+package org.github.jonathan.skeleton.rest.produto;
 
 import org.springframework.stereotype.Repository;
 import org.github.jonathan.skeleton.generic.RestFullApiGeneric;
