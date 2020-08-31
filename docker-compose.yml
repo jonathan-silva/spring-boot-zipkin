@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: spring
+      POSTGRES_PASSWORD: spring
+      POSTGRES_DB: spring
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  openzipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
