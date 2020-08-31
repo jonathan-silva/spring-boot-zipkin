@@ -1,4 +1,4 @@
-package org.github.jonathan.skeleton.rest.produto;
+package org.github.jonathan.skeleton.rest.product;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "TB_PRODUTO")
-public class Produto implements Serializable {
+public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
