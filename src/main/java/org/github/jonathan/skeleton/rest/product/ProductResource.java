@@ -4,7 +4,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 import org.github.jonathan.skeleton.generic.ResourceGeneric;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
